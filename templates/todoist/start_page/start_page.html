@@ -14,30 +14,29 @@
 <div class="d-flex flex-column align-items-center justify-content-between text-center h-100 w-100">
 	{% include 'todoist/start_page/navbar.html' %}
 
-    <main class="w-50 p-3">
-      <div class="lead text-center text-wrap">
-        <h1>Начальная страница</h1>
-        <p>
-          Пример простого менеджера задач на Django.
-        </p>
-        <div class="techs d-inline-block">
-          Список использованных технологий:
-          <div class="techs-list text-start">
-            <ul>
-              <li>Язык программирования: Python</li>
-              <li>Фрэймворк: Django</li>
-            </ul>
-          </div>
+  <main class="w-50 p-3">
+    <div class="lead text-center text-wrap">
+      <h1>Начальная страница</h1>
+      <p>
+        Пример простого менеджера задач на Django.
+      </p>
+      <div class="techs d-inline-block">
+        Список использованных технологий:
+        <div class="techs-list text-start">
+          <ul>
+            <li>Язык программирования: Python</li>
+            <li>Фрэймворк: Django</li>
+          </ul>
         </div>
-        <br>
-        <form action="">
-          <button type="submit" class="btn btn-light fw-bolder fs-4 m-3">Начать</button>
-        </form>
       </div>
-    </main>
+      <br>
+      <form action="{% url 'todoist' %}">
+        <button type="submit" class="btn btn-light fw-bolder fs-4 m-3">Начать</button>
+      </form>
+    </div>
+  </main>
 
-    <footer class="w-50">
-      <p class="lead">Todoist by @django_999</p>
-    </footer>
+  {% include 'todoist/start_page/footer.html' %}
+
 </div>
 {% endblock %}
