@@ -1,0 +1,30 @@
+# Логи
+*.log
+
+# Файлы перевода
+*.pot
+
+# Скомпилированные файлы Python
+*.pyc
+__pycache__/
+
+# Файл базы данных SQLite
+db.sqlite3
+
+# Локальные настройки
+local_settings.py
+
+# Виртуальное окружение
+venv/
+env/
+.env
+
+# Файлы и директории, специфичные для PyCharm
+.idea/
+
+# Другие ненужные файлы
+.DS_Store
+Thumbs.db
+.coverage
+.tox/
+.eggs/
