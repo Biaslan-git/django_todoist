@@ -6,5 +6,5 @@ class StartPageView(TemplateView):
     template_name = 'todoist/start_page/start_page.html'
 
 class TodoistView(TemplateView):
-    template_name = 'todoist/todoist.html'
+    template_name = 'todoist/todoist_page/todoist.html'
 
